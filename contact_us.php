@@ -36,48 +36,124 @@
 	</ul>
 	
 	<div class="row container">
-		<div class="white darken-4 contact-us-form">
-			<div class="row">
-				<h2 class="contact-us-heading center-align">Contact Us</h2>
-			</div>
-			<div class="row">
-				<div class="col m6 s12">
-					<div class="row">
-						<form id="pigmail" class="col s12">
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="name" type="text" class="validate" required="true">
-									<label for="name">Name</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="email" type="email" class="validate">
-									<label for="email">Email</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="phone" type="text" class="validate">
-									<label for="phone_number">Phone Number</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="row">
+		<div class="contact-us-form">
+			<div class="pink lighten-5" style="border-radius: 40px;">
+				<div class="row">
+					<h2 class="center-align pigme-heading" style="padding: 20px;">Contact Us</h2>
+				</div>
+				<div class="row">
+					<div class="col l6 m12">
+						<div class="row">
+							<form id="pigmail" class="col s12">
+								<div class="row" style="margin:0 10px;">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">person</i>
+										<input id="name" type="text" class="validate" required="true">
+										<label for="name">Name</label>
+									</div>
+
+									<div class="input-field col s12">
+										<i class="material-icons prefix">title</i>
+										<input id="subject" type="text" class="validate" required="true">
+										<label for="name">Subject</label>
+									</div>
+								
 							        <div class="input-field col s12">
 							        	<i class="material-icons prefix">mode_edit</i>
-							          	<textarea id="body" class="materialize-textarea"></textarea>
-							          	<label for="textarea">Textarea</label>
+							          	<textarea id="body" class="materialize-textarea" required="true"></textarea>
+							          	<label for="textarea">Comment & Advice</label>
 							        </div>
-							    </div>
-							</div>
-							
+								   	<center style="padding-bottom: 30px;">
+								   		<button id="submit" class="waves-effect waves-light btn-large red">Submit</button>	
+								   	</center>
+								</div>
+								
 
-						</form>
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="col m6 s12">
-					asdasdasd
+					<div class="col l6 m12" style="padding: 0 20px 20px 20px;">
+						<div class="row">
+							<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-2">
+					          		<div class="row valign-wrapper">
+					            		<div class="col m4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col m8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+					      	<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-1">
+					          		<div class="row valign-wrapper">
+					            		<div class="col m4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col m8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+						</div>
+
+						<div class="row">
+							<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-1">
+					          		<div class="row valign-wrapper">
+					            		<div class="col s4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col s8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+					      	<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-1">
+					          		<div class="row valign-wrapper">
+					            		<div class="col s4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col s8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+						</div>
+
+						<div class="row">
+							<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-1">
+					          		<div class="row valign-wrapper">
+					            		<div class="col s4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col s8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+					      	<div class="col s6">
+					        	<div class="card-panel grey lighten-5 z-depth-1">
+					          		<div class="row valign-wrapper">
+					            		<div class="col s4">
+					              			<img class="icon" src="static/icons/instagram_icon.png" alt="pig-me-instagram-icon">
+					            		</div>
+					           			<div class="col s8">
+					              			<span class="black-text">Instagram</span>
+					            		</div>
+					          		</div>
+					        	</div>
+					      	</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -121,9 +197,10 @@
 		$(document).ready(function(){
 			$('.parallax').parallax();
 			$('.sidenav').sidenav();
-			$('#bt1').click(function() {
-		        $('#fr1').attr('action','mailto:test@test.com?subject=' + $('#tb1').val() + '&body=' + $('#tb2').val());
-		        $('#fr1').submit();
+			$('#submit').click(function() {
+		        $('#pigmail').attr('action','mailto:matthew.ariel.wangsit@gmail.com?subject=' + $('#subject').val() + '&body=Name:' $('#name').val()+'\n\n'+ $('#body').val());
+		        $('#pigmail').submit();
+
 		    });
 			//$(".dropdown-trigger-custom").dropdown({constrainWidth: false});
 			//$(".dropdown-trigger").dropdown();
